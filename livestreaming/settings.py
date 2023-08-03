@@ -31,8 +31,8 @@ DEBUG = True
 ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS", "").split(",")
 
 # Mux Related
-MUX_TOKEN_ID = os.environ.get["MUX_TOKEN_ID"]
-MUX_TOKEN_SECRET = os.environ.get["MUX_TOKEN_SECRET"]
+MUX_TOKEN_ID = os.environ["MUX_TOKEN_ID"]
+MUX_TOKEN_SECRET = os.environ["MUX_TOKEN_SECRET"]
 MUX_SIGNING_KEY = os.environ["MUX_SIGNING_KEY"]
 MUX_PRIVATE_KEY = os.environ["MUX_PRIVATE_KEY"]
 
