@@ -1,0 +1,29 @@
+{% load humanize %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Teste de LiveStream</title>
+</head>
+<body>
+
+<script src="https://cdn.jsdelivr.net/npm/@mux/mux-player"></script>
+
+<div class="container mt-5">
+  <div>
+    <mux-player
+      stream-type="live"
+      playback-id="{{object.playback_id}}"
+      metadata-video-title="{{object.title}}"
+      style="width: 1280px;height: 720px;"
+    ></mux-player>
+  </div>
+  <h2>{{object.title}}</h2>
+  <p>Criada em <span>{{object.created_at}}</span></p>
+  <p>{{object.description}}</p>
+</div>
+
+</body>
+</html>
